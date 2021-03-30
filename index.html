@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Alorithm of sorting</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        Sorting algorithms. Practical task.
+      </h1>
+    </header>
+    <section>
+      <div class="input_array">
+        <label for="array">Введите массив данных</label>
+        <input type="text" id="array">
+        <button type="submit" class="btn" id="arr_submit">Отправить</button>
+      </div>
+      <div class="sort_method">
+        <p>Выберите алгорит сортировки</p>
+        <select name="sorting" id="sorting_method">
+        <option value="bubble_sort" selected>Bubble Sort</option>
+        <option value="quick_sort">Quick Sort</option>
+        <option value="tim_sort" disabled>Tim Sort</option>
+        <option value="merge_sort">Merge Sort</option>
+        <option value="insert_sort">Insertion Sort</option>
+        <option value="select_sort">Selection Sort</option>
+        </select>
+        <button type="submit" class="btn" id="start_sorting">Выбрать и сортировать</button>
+      </div>
+      <div class="array_block">
+        <p>Введенный массив</p>
+        <div id="starting_array">
+          <span class="element">56</span>
+          <span class="element">20</span>
+          <span class="element">48</span>
+          <span class="element">99</span>
+          <span class="element">1</span>
+          <span class="element">7</span>
+        </div>
+      </div>
+      <div class="array_block">
+        <p>Отсортированный массив</p>
+        <div id="sorted_array">
+          <span class="element">1</span>
+          <span class="element">7</span>
+          <span class="element">20</span>
+          <span class="element">48</span>
+          <span class="element">56</span>
+          <span class="element">99</span>
+        </div>
+      </div>
+    </section>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
